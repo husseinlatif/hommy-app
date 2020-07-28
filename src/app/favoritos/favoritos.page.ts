@@ -12,4 +12,8 @@ export class FavoritosPage implements OnInit {
   ngOnInit() {
   }
 
+  republic = {
+    name: "Casa muito engraçada",
+  }
+
 }
