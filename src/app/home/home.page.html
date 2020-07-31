@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+<section *ngFor="let republic of republics">
+<h1>{{republic.name}}</h1>
+<h2>{{republic.price}}</h2>
+<h3>{{republic.numOfAvailableRooms}}</h3>
+<h4>{{republic.numOfBathrooms}}</h4>
+</section>
+
+
+</ion-content>
