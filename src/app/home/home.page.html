@@ -7,6 +7,17 @@
 <ion-content>
 
 
+  <!--REPÚBLICAS LISTADAS NA HOME UTILIZANDO COMPONENTES JUNTO COM *ngFor-->
+<app-republic-card *ngFor = "let republic of republics"
+[title]='republic.name'
+[price]='republic.price'
+[rooms]='republic.numOfAvailableRooms'
+[bathrooms]='republic.numOfBathrooms'>
+</app-republic-card>
+
+
+
+<!--REPÚBLICAS LISTADAS NA HOME UTILIZANDO *ngFor e ngOnInit-->
 <section *ngFor="let republic of republics">
 <h1>{{republic.name}}</h1>
 <h2>{{republic.price}}</h2>

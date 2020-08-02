@@ -12,7 +12,7 @@ export class HomePage implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    for (let i=0; i<=5; i++){
+    for (let i=0; i<5; i++){
       this.republics[i].name= 'Republic ' + i;
       this.republics[i].price= Math.floor(Math.random()*1500);
       this.republics[i].numOfAvailableRooms= Math.floor(Math.random()*5);
